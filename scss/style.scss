@@ -38,42 +38,43 @@
 }
 
 .attribution {
-    color: $grayish-blue;
-    text-align: center;
-    font-size: 14px;
+  color: $grayish-blue;
+  text-align: center;
+  font-size: 14px;
 
-    a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 700;
-    
-        &:last-of-type {
-            color: $dark-blue;
-        }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
 
-        &:hover, &:active {
-            cursor: pointer;
-            text-decoration: underline;
-        }
+    &:last-of-type {
+      color: $dark-blue;
     }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }
 
-@media only screen and (min-width: $desktop) {
+@media only screen and (min-width: $xsmall) and (max-width: $small) {
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: $small) {
   h1 {
     font-size: 30px;
   }
 
   p {
     font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: $mobile) {
-  h1 {
-    font-size: 26px;
-  }
-
-  p {
-    font-size: 18px;
   }
 }
