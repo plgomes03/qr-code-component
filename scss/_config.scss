@@ -1,0 +1,36 @@
+// breakpoints
+$mobile: 375px;
+$desktop: 1440px;
+
+// colors
+$white: #ffffff;
+$light-gray: #d6e2f0;
+$grayish-blue: #7b879d;
+$dark-blue: #1f3251;
+
+// flexbox
+@mixin flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+// others
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+p {
+  font-weight: 400;
+  color: $grayish-blue;
+}
